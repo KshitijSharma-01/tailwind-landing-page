@@ -43,11 +43,11 @@ const line4 = document.getElementById("line4")
 setupIntersectionObservation(line1, true, 0.15)
 setupIntersectionObservation(line2, false, 0.15)
 setupIntersectionObservation(line3, true, 0.15)
-setupIntersectionObservation(line4, true, 0.8)
+setupIntersectionObservation(line4, true, 0.9)
 
 const dtElements = document.querySelectorAll("dt")
-dtElements.forEach(element =>{
-    element.addEventListener("click",()=>{
+dtElements.forEach(element => {
+    element.addEventListener("click", () => {
         const ddId = element.getAttribute("aria-controls");
         const ddElements = document.getElementById(ddId);
         const ddArrowIcom = element.querySelectorAll("i")[0];
