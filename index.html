@@ -12,15 +12,13 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav
-      class="p-3 flex bg-white justify-between items-center fixed top-0 left-0 right-0 z-20 shadow-md">
+     <nav
+      class="p-3 flex bg-white justify-between items-center fixed top-0 right-0 left-0 z-20 shadow-md">
       <a href="#" id="brand" class="flex gap-2 items-center flex-1">
-        <img
-          class="object-cover max-w-12 max-h-12"
-          src="./assets/asset 0.png"
-          alt="Logo" />
+        <img src="../assets/asset 0.png" alt="logo" />
         <span class="text-lg font-medium font-display">ToDesktop</span>
       </a>
+
       <div id="nav-menu" class="hidden lg:flex gap-12">
         <a href="#" class="font-medium hover:text-primary">Pricing</a>
         <a href="#" class="font-medium hover:text-primary">Docs</a>
@@ -28,16 +26,16 @@
         <a href="#" class="font-medium hover:text-primary">Blogs</a>
         <a href="#" class="font-medium hover:text-primary">Login</a>
       </div>
-      <div class="hidden lg:flex flex-1 justify-end">
+
+      <div class="hidden flex-1 lg:flex justify-end">
         <button
           class="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
-          <img src="./assets/asset 1.svg" alt="" />
-          <span class="font-display font-medium">Electron Developers</span>
+          <img src="../assets/asset 1.svg" alt="" />
+          <span>Electron Developers </span>
           <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
-
-      <button class="p-2 lg:hidden" onclick="handleMenu()">
+      <button class="p-2 lg:hidden" onclick="handlemenu()">
         <i class="fa-solid fa-bars text-gray-600"></i>
       </button>
 
@@ -46,17 +44,15 @@
         class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
         <div id="nav-bar" class="flex justify-between">
           <a href="#" id="brand" class="flex gap-2 items-center">
-            <img
-              class="object-cover max-w-12 max-h-12"
-              src="./assets/asset 0.png"
-              alt="Logo" />
+            <img src="../assets/asset 0.png" alt="logo" />
             <span class="text-lg font-medium font-display">ToDesktop</span>
           </a>
-          <button class="p-2 md:hidden" onclick="handleMenu()">
+          <button class="p-2 md:hidden" onclick="handlemenu()">
             <i class="fa-solid fa-xmark text-gray-600"></i>
           </button>
         </div>
-        <div class="mt-6">
+
+        <div class="mt-5">
           <a
             href="#"
             class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
@@ -83,14 +79,17 @@
             >Login</a
           >
         </div>
-        <div class="h-[1px] bg-gray-300"></div>
+
+        <div class="h-0.5 bg-gray-300"></div>
+
         <button
-          class="mt-6 w-full flex gap-2 items-center px-6 py-4 rounded-lg hover:bg-gray-50">
-          <img src="./assets/asset 1.svg" alt="" />
-          <span>Electron Developers</span>
+          class="mt-5 pl-5 h-10 block w-full gap-2 items-center hover:bg-gray-50">
+          <img src="../assets/asset 1.svg" alt="" />
+          <span>Electron Developers </span>
         </button>
       </div>
     </nav>
+
     <!-- Main -->
     <main class="mt-16">
       <!-- Hero section -->
